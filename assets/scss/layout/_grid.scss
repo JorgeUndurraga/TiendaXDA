@@ -1,0 +1,33 @@
+.grilla{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    .nav{
+        background-color: green;
+        grid-column: span 4;
+    }
+    .header{
+        background-color: yellow;
+        grid-column: span 4;
+       
+    }
+
+    .article{
+        background-color: pink;
+        grid-column: span 4;
+    }
+
+    .footer{
+        background-color: aquamarine;
+        grid-column: span 3;
+    }
+
+    .suscribirse{
+        background-color: burlywood;
+        grid-column: span 1;
+    }
+
+    @include respond-to($bp-md-tablet){
+
+    }    
+}
