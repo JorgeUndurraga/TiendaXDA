@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
     .navbar{
-        background-color: green;
+        // background-color: green;
         grid-column: span 4;
     }
     .header{
@@ -12,17 +12,17 @@
     }
 
     .article{
-        background-color: pink;
+        // background-color: pink;
         grid-column: span 4;
     }
 
     .footer{
-        background-color: aquamarine;
+        background-color: $smooky-black;
         grid-column: span 3;
     }
 
     .suscribirse{
-        background-color: burlywood;
+        // background-color: burlywood;
         grid-column: span 1;
     }
 
@@ -32,7 +32,7 @@
 
         
         .navbar{
-            background-color: green;
+            // background-color: green;
             grid-column: 1/4;
         }
         .header{
@@ -42,18 +42,18 @@
         }
     
         .article{
-            background-color: pink;
+            // background-color: pink;
             grid-column: 1/3;
             grid-row: 2/4;
         }
     
         .footer{
-            background-color: aquamarine;
+            background-color: $smooky-black;
             grid-column: 1/2;
         }
     
         .suscribirse{
-            background-color: burlywood;
+            // background-color: burlywood;
             grid-column: 2/3;
         }
     }    

@@ -1,0 +1,51 @@
+
+@include respond-to($bp-xl-desktop){
+        .footer{
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                &__cajaFooter{
+                        width: 238px;
+                        height: 102px;
+                        //background-color: lightcoral;
+                        position: absolute;
+                        left: 80px;
+                }
+                
+                &__newsletter{
+                        font-family: $secondary-fonts;
+                        font-weight: $weigth-font-bold;
+                        color: $white;
+                }
+
+                &__cajaCorreoElectronicoFormulario{
+                        //background-color: rgb(84, 85, 131);
+                        position: absolute;
+                        bottom: 0;
+                }
+                
+                &__correoElectronico{
+                        font-family: $secondary-fonts;
+                        font-weight: $weigth-font-bold;
+                        color: $white;
+                        margin:0;
+                }
+        }
+}
+
+
+
+
+
+/*
+    .footer h4{
+        font-family: $secondary-fonts;
+        font-weight: $weigth-font-bold;
+}
+
+.footer p{
+        font-family: $secondary-fonts;
+        font-weight: $weigth-font-bold;
+    }
+*/    

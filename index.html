@@ -9,10 +9,11 @@
 <body>
 <div class="grilla">
 <!-- //////////NAVEGADOR////////// -->  
-<nav class="navbar navbar-expand-xl navbar-dark">
+<nav class="navbar navbar-expand-xl navbar-ligth">
   <!-- agregué style="backg....3e8c;" para asignar el color> -->
   <a class="navbar-brand" href="#">
-    <img src="assets/img/logo.png" width="87px" height=auto alt="logo suricata" loading="lazy">
+    <div class="navbar__logo_xda">XDA</div>
+    <!--<img src="assets/img/logo.png" width="87px" height=auto alt="logo XDA" loading="lazy">-->
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,19 +50,31 @@
   </header>
 
   <article class="article">
-    <h1 class="article__h1">Lorem ipsum dolor sit</h1>
-    <div class="article__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolorum consequatur rerum temporibus aliquam nesciunt id beatae eligendi quasi ut sint, quas culpa! Similique ex, atque quaerat provident nulla cupiditate?</div>
-    <div class="article__boton">AQUÍ VA UN BOTÓN</div>
+    <div class="article__cajaTexto">
+
+      <h1 class="article__h1">Lorem ipsum dolor sit</h1>
+      <div class="article__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolorum
+        consequatur rerum temporibus aliquam nesciunt id beatae eligendi quasi ut sint, quas culpa! Similique ex, atque
+        quaerat provident nulla cupiditate?</div>
+      <!-- <div class="article__boton">AQUÍ VA UN BOTÓN</div> -->
+      <img class="article__boton" src="assets/img/boton.jpg" alt="boton">
+
+    </div>
   </article>
 
   <footer class="footer">
-    <h4 class=footer__newsletter"">NewsLetter</h4>
-    <p class="correoElectronico">Correo Electrónico</p>
-    <div class="formulario">AQUÍ VA UN FORMULARIO</div>
+    <div class="footer__cajaFooter">
+      <h4 class="footer__newsletter">NewsLetter</h4>
+              <div class="footer__cajaCorreoElectronicoFormulario">
+                  <p class="footer__correoElectronico">Correo Electrónico</p>
+                  <img class="footer__formulario" src="assets/img/formulario-email.jpg" alt="boton">
+              </div>
+      <!-- <div class="formulario">AQUÍ VA UN FORMULARIO</div> -->
+    </div>
   </footer>
 
   <div class="suscribirse">
-    <p class="suscribirse__palabra">SUSCRIBIR</p>
+    <p class="suscribirse__palabra">Suscribir</p>
   </div> 
 
 </div>

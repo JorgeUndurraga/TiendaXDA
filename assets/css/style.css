@@ -9945,7 +9945,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grilla .navbar {
-  background-color: green;
   grid-column: span 4;
 }
 .grilla .header {
@@ -9953,15 +9952,13 @@ body {
   grid-column: span 4;
 }
 .grilla .article {
-  background-color: pink;
   grid-column: span 4;
 }
 .grilla .footer {
-  background-color: aquamarine;
+  background-color: #0C0910;
   grid-column: span 3;
 }
 .grilla .suscribirse {
-  background-color: burlywood;
   grid-column: span 1;
 }
 @media (min-width: 1200px) {
@@ -9969,7 +9966,6 @@ body {
     grid-template-columns: 39vw 4vw 57vw;
   }
   .grilla .navbar {
-    background-color: green;
     grid-column: 1/4;
   }
   .grilla .header {
@@ -9978,24 +9974,145 @@ body {
     grid-row: 2/5;
   }
   .grilla .article {
-    background-color: pink;
     grid-column: 1/3;
     grid-row: 2/4;
   }
   .grilla .footer {
-    background-color: aquamarine;
+    background-color: #0C0910;
     grid-column: 1/2;
   }
   .grilla .suscribirse {
-    background-color: burlywood;
     grid-column: 2/3;
   }
 }
 
-.header__imagen {
-  background-image: url("../../../assets/img/imagen1.png");
-  background-size: cover !important;
-  background-position: center !important;
+@media (min-width: 1200px) {
+  .article {
+    display: flex;
+    align-items: center;
+  }
+  .article__cajaTexto {
+    width: 361px;
+    height: 365px;
+    position: relative;
+    left: 80px;
+  }
+  .article__h1 {
+    text-transform: uppercase;
+    font-family: "Old Standard TT";
+    font-weight: 700;
+  }
+  .article__texto {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 18px;
+    color: #646266;
+  }
+  .article__boton {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .footer__cajaFooter {
+    width: 238px;
+    height: 102px;
+    position: absolute;
+    left: 80px;
+  }
+  .footer__newsletter {
+    font-family: "Old Standard TT";
+    font-weight: 700;
+    color: #FFF;
+  }
+  .footer__cajaCorreoElectronicoFormulario {
+    position: absolute;
+    bottom: 0;
+  }
+  .footer__correoElectronico {
+    font-family: "Old Standard TT";
+    font-weight: 700;
+    color: #FFF;
+    margin: 0;
+  }
+}
+/*
+    .footer h4{
+        font-family: $secondary-fonts;
+        font-weight: $weigth-font-bold;
+}
+
+.footer p{
+        font-family: $secondary-fonts;
+        font-weight: $weigth-font-bold;
+    }
+*/
+@media (min-width: 1200px) {
+  .header {
+    width: 690px;
+    height: 664px;
+  }
+  .header__imagen {
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+    display: inline-block;
+    background-image: url("../../assets/img/imagen1.png");
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+.nav-link {
+  color: #0C0910;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    background-color: #FFF;
+    background-color: red;
+    font-family: "Raleway";
+    font-weight: 700;
+    width: 100%;
+    height: 86px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 55px;
+    position: relative;
+  }
+  .navbar__logo_xda {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 92px;
+    height: 86px;
+    color: #FFF;
+    background-color: #0C0910;
+    font-family: "Old Standard TT";
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .suscribirse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .suscribirse__palabra {
+    writing-mode: vertical-rl;
+    font-family: "Old Standard TT";
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

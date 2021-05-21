@@ -1,0 +1,34 @@
+@include respond-to($bp-xl-desktop){
+
+    .article{
+            //Para centrar el texto dentro del div
+            display: flex;
+            align-items: center;
+
+        &__cajaTexto{
+            // background-color: khaki;
+            width: 361px;
+            height: 365px;
+            position: relative;
+            left: 80px;
+        }
+
+        &__h1{
+            text-transform: uppercase;
+            font-family: $secondary-fonts;
+            font-weight: $weigth-font-bold;
+        }
+
+        &__texto{
+            font-family: $primary-fonts;
+            font-weight: $weigth-font-regular;
+            font-size: $font-large;
+            color: $granite-gray;
+        }
+
+        &__boton{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
