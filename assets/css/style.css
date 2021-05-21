@@ -9944,7 +9944,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.grilla .nav {
+.grilla .navbar {
   background-color: green;
   grid-column: span 4;
 }
@@ -9990,6 +9990,12 @@ body {
     background-color: burlywood;
     grid-column: 2/3;
   }
+}
+
+.header__imagen {
+  background-image: url("../../../assets/img/imagen1.png");
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 /*# sourceMappingURL=style.css.map */

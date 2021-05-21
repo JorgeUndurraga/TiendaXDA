@@ -14,8 +14,14 @@ sass --watch assets/scss/main.scss:assets/css/style.css
 //base
 @import "base/reset";
 
-//layouy
-@import "layout/grid"
+//layout
+@import "layout/grid";
+@import "layout/article";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/suscribirse";
+
 
 //components
 

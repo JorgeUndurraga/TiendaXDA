@@ -2,14 +2,13 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
-    .nav{
+    .navbar{
         background-color: green;
         grid-column: span 4;
     }
     .header{
         background-color: yellow;
         grid-column: span 4;
-       
     }
 
     .article{
@@ -57,8 +56,5 @@
             background-color: burlywood;
             grid-column: 2/3;
         }
-
-
-
     }    
 }

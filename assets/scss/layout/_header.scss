@@ -1,0 +1,7 @@
+.header{
+    &__imagen{
+        background-image: url("../../../assets/img/imagen1.png");
+        background-size: cover !important; //para que se ajuste al tamaño de la caja
+        background-position: center !important; //para que se ubique al centro de la caja
+    }
+}
