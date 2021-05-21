@@ -27,7 +27,38 @@
         grid-column: span 1;
     }
 
-    @include respond-to($bp-md-tablet){
+    @include respond-to($bp-xl-desktop){
+
+        grid-template-columns: 39vw 4vw 57vw;
+
+        
+        .navbar{
+            background-color: green;
+            grid-column: 1/4;
+        }
+        .header{
+            background-color: yellow;
+            grid-column:  3/4;
+            grid-row: 2/5;
+        }
+    
+        .article{
+            background-color: pink;
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+    
+        .footer{
+            background-color: aquamarine;
+            grid-column: 1/2;
+        }
+    
+        .suscribirse{
+            background-color: burlywood;
+            grid-column: 2/3;
+        }
+
+
 
     }    
 }

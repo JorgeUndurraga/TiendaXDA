@@ -10,9 +10,9 @@ sass --watch assets/scss/main.scss:assets/css/style.css
 @import "abstracts/variables";
 
 //vendor
-
+@import "vendor/bootstrap4.6/bootstrap.scss";
 //base
-// @import "base/reset";
+@import "base/reset";
 
 //layouy
 @import "layout/grid"
