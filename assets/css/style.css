@@ -9942,7 +9942,9 @@ body {
 
 .grilla {
   display: grid;
+  height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.8fr 1fr 0.3fr;
 }
 .grilla .navbar {
   grid-column: span 4;
@@ -9956,9 +9958,11 @@ body {
 }
 .grilla .footer {
   background-color: #0C0910;
+  background-color: royalblue;
   grid-column: span 3;
 }
 .grilla .suscribirse {
+  background-color: burlywood;
   grid-column: span 1;
 }
 @media (min-width: 1200px) {
@@ -9986,59 +9990,82 @@ body {
   }
 }
 
+.article {
+  display: flex;
+  align-items: center;
+}
+.article__cajaTexto {
+  width: 258px;
+  height: 172px;
+  position: relative;
+  left: 31px;
+}
+.article__h1 {
+  text-transform: uppercase;
+  font-family: "Old Standard TT";
+  font-weight: 700;
+  font-size: 12px;
+}
+.article__texto {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  color: #646266;
+  font-size: 12px;
+}
+.article__boton {
+  bottom: 0;
+}
+
 @media (min-width: 1200px) {
-  .article {
-    display: flex;
-    align-items: center;
-  }
   .article__cajaTexto {
     width: 361px;
     height: 365px;
     position: relative;
     left: 80px;
   }
-  .article__h1 {
-    text-transform: uppercase;
-    font-family: "Old Standard TT";
-    font-weight: 700;
-  }
-  .article__texto {
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 18px;
-    color: #646266;
-  }
   .article__boton {
     position: absolute;
     bottom: 0;
   }
 }
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.footer__cajaFooter {
+  width: 228px;
+  height: 77px;
+  left: 31px;
+}
+.footer__newsletter {
+  font-family: "Old Standard TT";
+  font-weight: 700;
+  color: #FFF;
+  font-size: 12px;
+}
+.footer__cajaCorreoElectronicoFormulario {
+  bottom: 0;
+}
+.footer__correoElectronico {
+  font-family: "Old Standard TT";
+  font-weight: 700;
+  font-size: 12px;
+  color: #FFF;
+  margin: 0;
+}
+
 @media (min-width: 1200px) {
-  .footer {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
   .footer__cajaFooter {
     width: 238px;
     height: 102px;
     position: absolute;
     left: 80px;
   }
-  .footer__newsletter {
-    font-family: "Old Standard TT";
-    font-weight: 700;
-    color: #FFF;
-  }
   .footer__cajaCorreoElectronicoFormulario {
     position: absolute;
     bottom: 0;
-  }
-  .footer__correoElectronico {
-    font-family: "Old Standard TT";
-    font-weight: 700;
-    color: #FFF;
-    margin: 0;
   }
 }
 /*
@@ -10052,67 +10079,83 @@ body {
         font-weight: $weigth-font-bold;
     }
 */
+.header {
+  width: 100%;
+  height: 56vw;
+}
+.header__imagen {
+  width: 100%;
+  height: 100%;
+  background-color: cornflowerblue;
+  display: inline-block;
+  background-image: url("../../assets/img/imagen1.png");
+  background-size: cover !important;
+  background-position: top !important;
+}
+
 @media (min-width: 1200px) {
   .header {
     width: 690px;
     height: 664px;
   }
   .header__imagen {
-    width: 100%;
-    height: 100%;
-    background-color: cornflowerblue;
-    display: inline-block;
-    background-image: url("../../assets/img/imagen1.png");
-    background-size: cover !important;
     background-position: center !important;
   }
 }
+.navbar {
+  background-color: #FFF;
+  font-family: "Raleway";
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 25px;
+  position: relative;
+}
+.navbar__logo_xda {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 3.5em;
+  color: #FFF;
+  background-color: #0C0910;
+  font-family: "Old Standard TT";
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-link {
   color: #0C0910;
 }
 
 @media (min-width: 1200px) {
   .navbar {
-    background-color: #FFF;
-    background-color: red;
-    font-family: "Raleway";
-    font-weight: 700;
-    width: 100%;
-    height: 86px;
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-    padding-right: 55px;
-    position: relative;
+    height: 87px;
+    padding-right: 56px;
   }
   .navbar__logo_xda {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 92px;
-    height: 86px;
-    color: #FFF;
-    background-color: #0C0910;
-    font-family: "Old Standard TT";
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 30px;
+    width: 93px;
+    height: 87px;
   }
 }
-@media (min-width: 1200px) {
-  .suscribirse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .suscribirse__palabra {
-    writing-mode: vertical-rl;
-    font-family: "Old Standard TT";
-    font-weight: 700;
-    text-align: center;
-  }
+.suscribirse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.suscribirse__palabra {
+  writing-mode: vertical-rl;
+  font-family: "Old Standard TT";
+  font-weight: 700;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

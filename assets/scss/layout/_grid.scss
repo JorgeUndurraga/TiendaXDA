@@ -1,6 +1,11 @@
 .grilla{
-    display:grid;
+    display: grid;
+    height: 100vh;
+
+
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.8fr 1fr 0.3fr;
     
     .navbar{
         // background-color: green;
@@ -18,12 +23,15 @@
 
     .footer{
         background-color: $smooky-black;
+        background-color: royalblue;
         grid-column: span 3;
+
     }
 
     .suscribirse{
-        // background-color: burlywood;
+        background-color: burlywood;
         grid-column: span 1;
+
     }
 
     @include respond-to($bp-xl-desktop){

@@ -1,43 +1,57 @@
+.navbar{
+    background-color: $white;
+    // background-color: red;
 
+    font-family: $primary-fonts;
+    font-weight: $weigth-font-bold;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 25px; //------------revisar
+    position: relative;
+
+    &__logo_xda{
+        //para ubicar el div apegado a las orillas del contenerdor nav.
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        height: 100%; ///---------revisar
+        width: 3.5em; //-------------revisar
+        
+
+        //características de la tipografía
+        color: $white;
+        background-color: $smooky-black;
+        font-family: $secondary-fonts;
+        font-weight: $weigth-font-bold;
+        font-size: $font-small;
+
+        //Para centrar el texto dentro del div
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 // color de la tipografía de los links
 .nav-link{
     color: $smooky-black;
 }
+
         @include respond-to($bp-xl-desktop){
             .navbar{
-                background-color: $white;
-                background-color: red;
-
-                font-family: $primary-fonts;
-                font-weight: $weigth-font-bold;
-                width: 100%;
-                height: 86px;
-                padding-top: 0;
-                padding-left: 0;
-                padding-bottom: 0;
-                padding-right: 55px;
-                position: relative;
+                height: 87px;
+                padding-right: 56px;
 
                 &__logo_xda{
-                    //para ubicar el div apegado a las orillas del contenerdor nav.
-                    position: absolute;
-                    top:0;
-                    bottom: 0;
-                    left: 0;
-                    width: 92px;
-                    height: 86px;
+                    font-size: $font-xx-large;
 
-                    //características de la tipografía
-                    color: $white;
-                    background-color: $smooky-black;
-                    font-family: $secondary-fonts;
-                    font-weight: $weigth-font-bold;
-
-                    //Para centrar el texto dentro del div
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    width: 93px;
+                    height: 87px;
                 }
             }
+
         }    

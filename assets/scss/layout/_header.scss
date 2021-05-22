@@ -1,8 +1,8 @@
-@include respond-to($bp-xl-desktop){
+.header{
+    width: 100%;
+    height: 56vw;
+    // height: 189px;
 
-    .header{
-        width: 690px;
-        height: 664px;
             &__imagen{
             width: 100%;
             height: 100%;
@@ -10,7 +10,18 @@
             display:inline-block;
             background-image: url("../../assets/img/imagen1.png");
             background-size: cover !important; //para que se ajuste al tamaño de la caja
-            background-position: center !important; //para que se ubique al centro de la caja
+            background-position: top !important; //para que se ubique al centro de la caja
+        }
+}
+
+    @include respond-to($bp-xl-desktop){
+        .header{
+            width: 690px;
+            height: 664px;
+        
+                    &__imagen{
+                        background-position: center !important; //para que se ubique al centro de la caja
+                    }
+        
         }
     }
-}

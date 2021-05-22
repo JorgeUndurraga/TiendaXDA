@@ -1,9 +1,8 @@
-@include respond-to($bp-xl-desktop){
-    .suscribirse{
-        //Para centrar el texto dentro del div
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.suscribirse{
+    //Para centrar el texto dentro del div
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
         &__palabra{
             writing-mode: vertical-rl;
@@ -11,5 +10,9 @@
             font-weight: $weigth-font-bold;
             text-align: center;
         }
-    }
 }
+
+
+        @include respond-to($bp-xl-desktop){
+
+            }
