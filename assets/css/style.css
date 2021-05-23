@@ -10207,9 +10207,7 @@ body {
   font-weight: 700;
   width: 100vw;
   height: 100%;
-  padding-top: 0;
   padding-left: 0;
-  padding-bottom: 0;
   padding-right: 7vw;
   position: relative;
 }
@@ -10232,6 +10230,14 @@ body {
 
 .nav-link {
   color: #0C0910;
+}
+
+a {
+  background-color: white;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 10vw;
 }
 
 @media (min-width: 768px) {

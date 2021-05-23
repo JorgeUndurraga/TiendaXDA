@@ -7,9 +7,9 @@
     width: 100vw; //ancho del navbar en la pantalla.
     height: 100%;
 
-    padding-top: 0;
+    // padding-top: 0; <----------------desactivado sino la hamburguesa se mueve cuando el más la toca.
     padding-left: 0;
-    padding-bottom: 0;
+    // padding-bottom: 0;
     padding-right: 7vw;
     position: relative;
 
@@ -44,6 +44,16 @@
     color: $smooky-black;
 }
 
+
+a { ///<----------esto es para que el menú desplegable sea balco y no transparente
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 10vw;
+}
+
+
  /////////////VERSION DE TABLET///////////////
         @include respond-to($bp-md-tablet){
             /*nav no cambia repecto de la versión para móvil
@@ -59,8 +69,7 @@
                 &__logo_xda{
                     font-size: $font-xx-large;
                     width: 12vh;
-
                 }
             }
 
-        }    
+        }
