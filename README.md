@@ -1,2 +1,2 @@
 # TiendaXDA
-Ejercicio para conocer el trabajo de grillas en CSS, usando Sass.
+Ejercicio para conocer el trabajo de grillas responsivas con CSS, usando Sass.
