@@ -2,59 +2,70 @@
         position: relative;
         display: flex;
         align-items: center;
+        background-color: $smooky-black;
+        width: 100%;
+        height: 100%;
+
 
                 &__cajaFooter{
-                        width: 228px;
-                        height: 77px;
-                        //background-color: lightcoral;
-                        // position: absolute;
-                        left: 31px;
+                        width: 71.25vw;
+                        height: 13.6vh;
+
+                        // background-color: lightcoral;
+                        position: absolute; //para que se despegue de la orilla izquierda
+                        left: 10vw;
                 }
                 
                 &__newsletter{
                         font-family: $secondary-fonts;
                         font-weight: $weigth-font-bold;
                         color: $white;
-                        font-size: $font-x-small;
+                        font-size: $font-medium;
                 }
 
                 &__cajaCorreoElectronicoFormulario{
                         //background-color: rgb(84, 85, 131);
-                        // position: absolute;
+                        position: absolute;
                         bottom: 0;
                 }
                 
                 &__correoElectronico{
                         font-family: $secondary-fonts;
-                        font-weight: $weigth-font-bold;
+                        font-weight: $weigth-font-regular;
                         font-size: $font-x-small;
                         color: $white;
                         margin:0;
                 }
+
+                &__formulario{
+                        width: 227px;
+                        height: auto;
+                }
 }
 
+
+ /////////////VERSION DE ESCRITORIO///////////////   
         @include respond-to($bp-xl-desktop){
                 .footer{
 
                         &__cajaFooter{
-                                width: 238px;
-                                height: 102px;
+                                width: 19.8vw;
+                                height: 13.6vh;
                                 //background-color: lightcoral;
-                                position: absolute;
-                                left: 80px;
+                                left: 6.6vw;
                         }
 
-                        &__cajaCorreoElectronicoFormulario{
-                                //background-color: rgb(84, 85, 131);
-                                position: absolute;
-                                bottom: 0;
+                        &__newsletter{
+                                font-size: $font-xx-large;
                         }
 
+                        &__correoElectronico{
+                                font-size: $font-medium;
+                        }
 
-
-
-
-
+                        &__formulario{
+                                width: 238px;
+                        }
                 }
                         
         }

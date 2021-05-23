@@ -1,25 +1,28 @@
 .article{
-    //Para centrar el texto dentro del div
+    //Para centrar la caja texto dentro del div
     display: flex;
     align-items: center;
 
         &__cajaTexto{
-            // background-color: khaki;
-            width: 258px;
-            height: 172px;
+            background-color: khaki;
+            width: 80vw;
+            height: 30vh;
+
             position: relative;
-            left: 31px;
+            left: 10vw;
         }
 
         &__h1{
-            text-transform: uppercase;
+            //Características del fuente
+            letter-spacing: -1px;
+            text-transform: uppercase; //todas las letras altas
             font-family: $secondary-fonts;
             font-weight: $weigth-font-bold;
-            font-size: $font-x-small;
-
+            font-size: $font-xx-large;
         }
 
         &__texto{
+            //Características del fuente
             font-family: $primary-fonts;
             font-weight: $weigth-font-regular;
             font-size: $font-large;
@@ -28,24 +31,38 @@
         }
 
         &__boton{
-            // position: absolute;
+            width: 85px;
+            height: auto;
+
+            /*características de posición para que independiente dela cantidad de texto,
+            el botón simpre se ubique en la parte inferior izquierda de la caja*/
+            position: absolute;
             bottom: 0;
         }
 }
 
+
+ /////////////VERSION DE ESCRITORIO///////////////   
     @include respond-to($bp-xl-desktop){
         .article{
             &__cajaTexto{
                 // background-color: khaki;
-                width: 361px;
-                height: 365px;
+                width: 30vw;
+                height: 47vh;
                 position: relative;
-                left: 80px;
+                left: 6.6vw;
+            }
+
+            &__h1{
+                font-size: $font-xxx-large;
+            }
+    
+            &__texto{
+                font-size: $font-large;
             }
 
             &__boton{
-                position: absolute;
-                bottom: 0;
+                width: 138px;
             }
         } 
 

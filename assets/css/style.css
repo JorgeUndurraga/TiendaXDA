@@ -9943,50 +9943,53 @@ body {
 .grilla {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.8fr 1fr 0.3fr;
+  grid-template-columns: 90vw 10vw;
+  grid-template-rows: 9.4vh 33.6vh 39vh 18vh;
 }
 .grilla .navbar {
-  grid-column: span 4;
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 .grilla .header {
-  background-color: yellow;
-  grid-column: span 4;
+  grid-column: 1/3;
+  grid-row: 2/3;
 }
 .grilla .article {
-  grid-column: span 4;
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
 .grilla .footer {
-  background-color: #0C0910;
-  background-color: royalblue;
-  grid-column: span 3;
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 .grilla .suscribirse {
-  background-color: burlywood;
-  grid-column: span 1;
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
 @media (min-width: 1200px) {
   .grilla {
     grid-template-columns: 39vw 4vw 57vw;
+    grid-template-rows: 11.4vh 62.2vh 26.4vh;
   }
   .grilla .navbar {
     grid-column: 1/4;
+    grid-row: 1/2;
   }
   .grilla .header {
-    background-color: yellow;
     grid-column: 3/4;
-    grid-row: 2/5;
+    grid-row: 2/4;
   }
   .grilla .article {
     grid-column: 1/3;
-    grid-row: 2/4;
+    grid-row: 2/3;
   }
   .grilla .footer {
-    background-color: #0C0910;
     grid-column: 1/2;
+    grid-row: 3/4;
   }
   .grilla .suscribirse {
     grid-column: 2/3;
+    grid-row: 3/4;
   }
 }
 
@@ -9995,16 +9998,18 @@ body {
   align-items: center;
 }
 .article__cajaTexto {
-  width: 258px;
-  height: 172px;
+  background-color: khaki;
+  width: 80vw;
+  height: 30vh;
   position: relative;
-  left: 31px;
+  left: 10vw;
 }
 .article__h1 {
+  letter-spacing: -1px;
   text-transform: uppercase;
   font-family: "Old Standard TT";
   font-weight: 700;
-  font-size: 12px;
+  font-size: 30px;
 }
 .article__texto {
   font-family: "Raleway";
@@ -10014,58 +10019,81 @@ body {
   font-size: 12px;
 }
 .article__boton {
+  width: 85px;
+  height: auto;
+  /*características de posición para que independiente dela cantidad de texto,
+  el botón simpre se ubique en la parte inferior izquierda de la caja*/
+  position: absolute;
   bottom: 0;
 }
 
 @media (min-width: 1200px) {
   .article__cajaTexto {
-    width: 361px;
-    height: 365px;
+    width: 30vw;
+    height: 47vh;
     position: relative;
-    left: 80px;
+    left: 6.6vw;
+  }
+  .article__h1 {
+    font-size: 50px;
+  }
+  .article__texto {
+    font-size: 18px;
   }
   .article__boton {
-    position: absolute;
-    bottom: 0;
+    width: 138px;
   }
 }
 .footer {
   position: relative;
   display: flex;
   align-items: center;
+  background-color: #0C0910;
+  width: 100%;
+  height: 100%;
 }
 .footer__cajaFooter {
-  width: 228px;
-  height: 77px;
-  left: 31px;
+  width: 71.25vw;
+  height: 13.6vh;
+  position: absolute;
+  left: 10vw;
 }
 .footer__newsletter {
   font-family: "Old Standard TT";
   font-weight: 700;
   color: #FFF;
-  font-size: 12px;
+  font-size: 16px;
 }
 .footer__cajaCorreoElectronicoFormulario {
+  position: absolute;
   bottom: 0;
 }
 .footer__correoElectronico {
   font-family: "Old Standard TT";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 12px;
   color: #FFF;
   margin: 0;
 }
+.footer__formulario {
+  width: 227px;
+  height: auto;
+}
 
 @media (min-width: 1200px) {
   .footer__cajaFooter {
-    width: 238px;
-    height: 102px;
-    position: absolute;
-    left: 80px;
+    width: 19.8vw;
+    height: 13.6vh;
+    left: 6.6vw;
   }
-  .footer__cajaCorreoElectronicoFormulario {
-    position: absolute;
-    bottom: 0;
+  .footer__newsletter {
+    font-size: 30px;
+  }
+  .footer__correoElectronico {
+    font-size: 16px;
+  }
+  .footer__formulario {
+    width: 238px;
   }
 }
 /*
@@ -10081,37 +10109,30 @@ body {
 */
 .header {
   width: 100%;
-  height: 56vw;
+  height: 100%;
 }
 .header__imagen {
   width: 100%;
   height: 100%;
-  background-color: cornflowerblue;
-  display: inline-block;
   background-image: url("../../assets/img/imagen1.png");
   background-size: cover !important;
   background-position: top !important;
 }
 
 @media (min-width: 1200px) {
-  .header {
-    width: 690px;
-    height: 664px;
-  }
-  .header__imagen {
-    background-position: center !important;
-  }
+  /*el header tiene la mismas características en la versión móvil y de escritorio,
+  pot lo tanto no requiere nuevas implementaciones*/
 }
 .navbar {
   background-color: #FFF;
   font-family: "Raleway";
   font-weight: 700;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 9.4vh;
   padding-top: 0;
   padding-left: 0;
   padding-bottom: 0;
-  padding-right: 25px;
+  padding-right: 7vw;
   position: relative;
 }
 .navbar__logo_xda {
@@ -10120,12 +10141,12 @@ body {
   bottom: 0;
   left: 0;
   height: 100%;
-  width: 3.5em;
-  color: #FFF;
+  width: 9.1vh;
   background-color: #0C0910;
+  color: #FFF;
   font-family: "Old Standard TT";
   font-weight: 700;
-  font-size: 14px;
+  font-size: 2.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10137,13 +10158,12 @@ body {
 
 @media (min-width: 1200px) {
   .navbar {
-    height: 87px;
+    height: 11.4vh;
     padding-right: 56px;
   }
   .navbar__logo_xda {
     font-size: 30px;
-    width: 93px;
-    height: 87px;
+    width: 12vh;
   }
 }
 .suscribirse {
@@ -10155,7 +10175,15 @@ body {
   writing-mode: vertical-rl;
   font-family: "Old Standard TT";
   font-weight: 700;
+  font-size: 14px;
   text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .suscribirse__palabra {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

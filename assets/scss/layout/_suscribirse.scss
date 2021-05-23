@@ -8,11 +8,18 @@
             writing-mode: vertical-rl;
             font-family: $secondary-fonts;
             font-weight: $weigth-font-bold;
+            font-size: $font-small;
+
             text-align: center;
+            margin: 0;
         }
 }
 
-
+ /////////////VERSION DE ESCRITORIO///////////////   
         @include respond-to($bp-xl-desktop){
-
+            .suscribirse{
+                &__palabra{
+                    font-size: $font-x-large;
+                }
             }
+        }
