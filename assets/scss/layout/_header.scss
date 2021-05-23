@@ -9,10 +9,21 @@
             // display:inline-block;
             background-image: url("../../assets/img/imagen1.png");
             background-size: cover !important; //para que se ajuste al tamaño de la caja
-            background-position: top !important; //para que se ubique al centro de la caja
+            background-position: top !important; //para que se ubique al desde el tope de arriba de la caja
         }
 }
 
+
+ /////////////VERSION DE TABLET///////////////
+ @include respond-to($bp-md-tablet){
+    .header{
+        &__imagen{
+
+            background-size: cover !important; //para que se ajuste al tamaño de la caja
+            background-position: 0% 33% !important; //para que se ubique al centro de la caja
+        }
+    }
+}
 
 
  /////////////VERSION DE ESCRITORIO///////////////   

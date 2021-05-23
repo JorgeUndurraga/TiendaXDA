@@ -4,7 +4,6 @@
     align-items: center;
 
         &__cajaTexto{
-            background-color: khaki;
             width: 80vw;
             height: 30vh;
 
@@ -25,7 +24,6 @@
             //Características del fuente
             font-family: $primary-fonts;
             font-weight: $weigth-font-regular;
-            font-size: $font-large;
             color: $granite-gray;
             font-size: $font-x-small;
         }
@@ -40,6 +38,32 @@
             bottom: 0;
         }
 }
+
+ /////////////VERSION DE TABLET///////////////
+    @include respond-to($bp-md-tablet){
+        
+        .article{
+            position: relative;
+            align-items: none;
+
+            &__cajaTexto{
+                position: absolute;
+                top: 2.7vh;
+            }
+
+            &__h1{
+                font-size: $font-xxx-large;
+            }
+
+            &__texto{
+                font-size: $font-large;
+            }
+
+            &__boton{
+                width: 144px;
+            }
+        }
+    }
 
 
  /////////////VERSION DE ESCRITORIO///////////////   
@@ -64,6 +88,5 @@
             &__boton{
                 width: 138px;
             }
-        } 
-
+        }
     }

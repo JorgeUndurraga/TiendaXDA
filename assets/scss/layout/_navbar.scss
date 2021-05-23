@@ -1,12 +1,11 @@
 .navbar{
-    background-color: $white;
-    // background-color: red;
+    // background-color: $white;
 
     font-family: $primary-fonts;
     font-weight: $weigth-font-bold;
 
     width: 100vw; //ancho del navbar en la pantalla.
-    height: 9.4vh;
+    height: 100%;
 
     padding-top: 0;
     padding-left: 0;
@@ -23,7 +22,7 @@
 
         //medidas y color del div
         height: 100%;
-        width: 9.1vh;
+        width: 9.4vh;
         background-color: $smooky-black;
         // display:inline-block;
 
@@ -45,10 +44,17 @@
     color: $smooky-black;
 }
 
+ /////////////VERSION DE TABLET///////////////
+        @include respond-to($bp-md-tablet){
+            /*nav no cambia repecto de la versión para móvil
+            por lo tanto no rquiere mayor implementación*/
+        }
+
+  /////////////VERSION DE ESCRITORIO///////////////
         @include respond-to($bp-xl-desktop){
             .navbar{
-                height: 11.4vh;
-                padding-right: 56px;
+                height: 100%;
+                padding-right: 4.6vw;
 
                 &__logo_xda{
                     font-size: $font-xx-large;

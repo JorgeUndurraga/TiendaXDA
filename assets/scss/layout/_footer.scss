@@ -37,11 +37,49 @@
                         margin:0;
                 }
 
+
                 &__formulario{
+                        display: block;
                         width: 227px;
                         height: auto;
                 }
+                
+                &__formularioLargo{ //Para ocultar la versión larga del formulario
+                        display: none;
+                }
 }
+
+ /////////////VERSION DE TABLET///////////////
+        @include respond-to($bp-md-tablet){
+                .footer{
+                        &__cajaFooter{
+                                top: 3.5vh;
+                        }
+
+                        &__cajaFooter{
+                                height: 10.2vh;
+                        }
+
+                        &__newsletter{
+                                font-size: $font-xx-large;
+                        }
+                        
+                        &__correoElectronico{
+                                font-size: $font-medium;
+                        }
+
+                        &__formulario{ //Para ocultar la versión pequeña del formulario
+                                display: none;
+                        }
+        
+                        &__formularioLargo{ //Para mostrar la versión larga del formulario
+                                display: block;
+                                width: 532px;
+                                height: auto;
+                        }
+
+                }
+        }
 
 
  /////////////VERSION DE ESCRITORIO///////////////   
@@ -64,8 +102,15 @@
                         }
 
                         &__formulario{
+                                display:block;
                                 width: 238px;
                         }
+
+                        &__formularioLargo{
+                                display: none;
+                        }
+
+
                 }
                         
         }

@@ -15,6 +15,15 @@
         }
 }
 
+ /////////////VERSION DE TABLET///////////////
+        @include respond-to($bp-md-tablet){
+            .suscribirse{
+                &__palabra{
+                    font-size: $font-x-large;
+                }
+            }
+        }
+
  /////////////VERSION DE ESCRITORIO///////////////   
         @include respond-to($bp-xl-desktop){
             .suscribirse{
